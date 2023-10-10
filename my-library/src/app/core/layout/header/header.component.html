@@ -1,0 +1,32 @@
+<header class="app-header">
+    <h1>Title</h1>
+
+    <nav>
+        <ul>
+            <!-- site.com/ -->
+            <!-- <li><a href="/">Homepage</a></li> -->
+            <li><a routerLink="/homepage">Homepage</a></li>
+
+            <!-- site.com/about -->
+            <!-- <li><a href="/about">About</a></li> -->
+            <!-- <li><a routerLink="/about">About</a></li> -->
+            <li><a [routerLink]="['/about']">About</a></li>
+
+            <!-- site.com/get-in-touch -->
+            <!-- <li><a href="/get-in-touch">Contact</a></li> -->
+            <li><a routerLink="/get-in-touch">Contact</a></li>
+
+
+
+            <li><a routerLink="/books">Our books</a></li>
+            <li><a routerLink="/book">Create a new book</a></li>
+
+            <!-- 
+            <li><a routerLink="/book/{{ book.id }}">Read book 42</a></li>
+            <li><a [routerLink]="['book', book.id]">Read book 42</a></li>
+            <li><a [routerLink]="['book', book.id, 'edit']">Edit the book 42</a></li>
+            <li><a [routerLink]="['book', book.id, 'delete']">Delete the book 42</a></li>
+            -->
+        </ul>
+    </nav>
+</header>
