@@ -1,0 +1,42 @@
+<header>
+  <h1>My Components</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#">menu 1</a></li>
+      <li><a href="#">menu 2</a></li>
+      <li><a href="#">menu 3</a></li>
+    </ul>
+  </nav>
+</header>
+
+<hr>
+
+<!-- TitleCompnent avec @Input -->
+<page-title cmpTitle="Lorem Ipsum" lead="Lorem ipsum dolor sit amet."></page-title>
+<page-title cmpTitle="Lorem Ipsum"></page-title>
+<page-title [cmpTitle]="mainTitle"></page-title>
+
+
+<!-- SayHelloComponent avec @Input -->
+<say-hello name="John"></say-hello>
+<say-hello name="Bob"></say-hello>
+<say-hello name="Bruce"></say-hello>
+
+
+<hr>
+
+<!-- AComponent > MonModule -->
+<app-a-component></app-a-component>
+
+
+<!-- BComponent > MonModule -->
+<app-b-component></app-b-component>
+
+
+
+<hr>
+
+<footer>
+  &copy; 2023 My components
+</footer>
