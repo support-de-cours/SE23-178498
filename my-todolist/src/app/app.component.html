@@ -1,0 +1,16 @@
+<h1>My TodoList</h1>
+<hr>
+
+<h3>What do you want to do ?</h3>
+<input type="text" [(ngModel)]="item">
+<button (click)="add()">Add</button>
+
+<hr>
+
+<h3>Do something</h3>
+
+<div *ngIf="!items?.length">Well done ! Rien a faire !!!</div>
+
+<ol>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ol>

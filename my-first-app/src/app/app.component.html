@@ -1,0 +1,16 @@
+<h1>Interpolations</h1>
+<hr>
+
+<h2>Interpolation unidirectionnelle : dataBinding</h2>
+<div>{{ message }}</div>
+
+<h2>Interpolation unidirectionnelle : propertyBinding</h2>
+<!-- <img src="{{ image_source }}"> -->
+<img [src]="image_source">
+
+<h2>Interpolation unidirectionnelle : eventBinding</h2>
+<button (click)="changeHello()">Click to change message</button>
+
+<h2>Interpolation birectionnelle : twoWayBinding</h2>
+<div>{{ username }}</div>
+<input type="text" [(ngModel)]="username">
