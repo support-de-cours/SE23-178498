@@ -8,11 +8,13 @@ import { PagesModule } from './pages/pages.module';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ApiInterceptor } from './core/interceptors/api.interceptor';
+import { ONeedATestComponent } from './o-need-a-test/o-need-a-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    ONeedATestComponent
   ],
   imports: [
     BrowserModule,

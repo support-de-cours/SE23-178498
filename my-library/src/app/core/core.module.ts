@@ -7,7 +7,8 @@ import { LayoutModule } from './layout/layout.module';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    LayoutModule
   ],
   exports: [
     LayoutModule
