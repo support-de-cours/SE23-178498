@@ -8,6 +8,7 @@ import { CreateComponent } from './pages/create/create.component';
 import { ReadComponent } from './pages/read/read.component';
 import { UpdateComponent } from './pages/update/update.component';
 import { DeleteComponent } from './pages/delete/delete.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const components = [
   IndexComponent,
@@ -24,6 +25,7 @@ const components = [
   imports: [
     CommonModule,
     HttpClientModule,
+    ReactiveFormsModule,
     BookRoutingModule
   ],
   exports: [

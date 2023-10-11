@@ -5,6 +5,10 @@ import { CreateComponent } from './pages/create/create.component';
 import { ReadComponent } from './pages/read/read.component';
 import { UpdateComponent } from './pages/update/update.component';
 import { DeleteComponent } from './pages/delete/delete.component';
+import { yesGuard } from 'src/app/core/guard/yes.guard';
+import { noGuard } from 'src/app/core/guard/no.guard';
+import { maybeGuard } from 'src/app/core/guard/maybe.guard';
+import { confirmGuard } from 'src/app/core/guard/confirm.guard';
 
 const routes: Routes = [
 
@@ -68,6 +72,8 @@ const routes: Routes = [
     children: [
       {
         path: '',// site.com/book
+        // canActivate: [yesGuard], // Avant l'execution de la redirection / du composant
+        // canDeactivate: [confirmGuard], // Avant de quitter la vue
         component: CreateComponent,
       },
       {

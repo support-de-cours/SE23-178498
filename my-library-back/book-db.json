@@ -11,6 +11,42 @@
       "description": "A good book",
       "price": 26.32,
       "id": 2
+    },
+    {
+      "title": "My third book",
+      "description": "A good book",
+      "price": 26.32,
+      "id": 3
+    },
+    {
+      "title": "Le livre d'angular !!!",
+      "description": null,
+      "price": 50,
+      "id": 4
+    },
+    {
+      "title": "azerty",
+      "description": null,
+      "price": 43,
+      "id": 5
+    },
+    {
+      "title": "azerty",
+      "description": null,
+      "price": 12,
+      "id": 6
+    },
+    {
+      "title": "mon livre préféré",
+      "description": null,
+      "price": 0.14,
+      "id": 7
+    },
+    {
+      "title": "mon livre préféré",
+      "description": "jhjhjhjhj",
+      "price": 0.14,
+      "id": 8
     }
   ],
   "authors": [

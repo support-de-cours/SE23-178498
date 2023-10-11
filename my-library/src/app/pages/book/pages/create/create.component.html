@@ -1,1 +1,30 @@
-<p>Book create works!</p>
+<h1>Create a  new book</h1>
+
+<div class="row">
+    <div class="col-6 offset-3">
+
+        <form [formGroup]="bookForm" (submit)="sendNewBook()">
+        
+            <div class="mb-3">
+                <label for="title">Titre du livre</label>
+                <input type="text" name="title" id="title" formControlName="title" class="form-control" [ngClass]="{'is-invalid': bookForm.controls.title.touched && !bookForm.controls.title.valid}">
+                <p *ngIf="!bookForm.controls.title.valid" class="invalid-feedback">Le titre est obligatoire</p>
+            </div>
+        
+            <div class="mb-3">
+                <label for="description">Description du livre</label>
+                <textarea name="description" id="description" formControlName="description" class="form-control"></textarea>
+            </div>
+        
+            <div class="mb-3">
+                <label for="price">Prix du livre</label>
+                <input type="number" step="0.01" name="price" id="price" formControlName="price" class="form-control">
+            </div>
+        
+            <button type="submit" class="btn btn-sm btn-primary" [disabled]="!bookForm.valid">Envoyer</button>
+            <button type="reset">Annuler</button>
+            <button type="button" (click)="back()">Retour</button>
+        </form>
+        
+    </div>
+</div>

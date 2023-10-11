@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { PagesModule } from './pages/pages.module';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ApiInterceptor } from './core/interceptors/api.interceptor';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     PagesModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: ApiInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

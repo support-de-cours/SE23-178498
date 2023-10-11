@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Book } from './../../interfaces/book';
 import { BookService } from '../../services/book.service';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   // selector: 'page-book-index',
@@ -17,18 +18,13 @@ export class IndexComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-    // const books = this.bookService.getBooks();
-    // const books = this.bookService.books;
-    // console.table( books );
-
-    this.books = this.bookService.books;
+    // this.books = this.bookService.books;
+    this.bookService.books.subscribe(books => this.books = books)
 
     setTimeout(() => {
 
-      const url = 'http://localhost:3000/books';
-      this.http.get(url)
+      this.http.get('/books')
         .subscribe(response => {
-          // this.books = response as Book[];
           this.bookService.books = response as Book[];
         });
 
