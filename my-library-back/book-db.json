@@ -1,8 +1,22 @@
 {
-    "books": [
-        {"id": 1, "title": "My awesome Book", "description": "No book description", "price": 42.99 }
-    ],
-    "authors": [
-        {"id": 1, "name": "John"}
-    ]
+  "books": [
+    {
+      "title": "My awesome book",
+      "description": "A good book",
+      "price": 26.32,
+      "id": 1
+    },
+    {
+      "title": "My super book",
+      "description": "A good book",
+      "price": 26.32,
+      "id": 2
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "John"
+    }
+  ]
 }
