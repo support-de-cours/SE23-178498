@@ -16,6 +16,11 @@ const routes: Routes = [
 
 
 
+  // site.com/books?param=value
+  // site.com/#!books
+
+
+
   // site.com/books             -> Index
   // site.com/books/create      -> Create
   // site.com/books/42          -> Read

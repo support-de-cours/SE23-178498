@@ -1,0 +1,8 @@
+{
+    "books": [
+        {"id": 1, "title": "My awesome Book", "description": "No book description", "price": 42.99 }
+    ],
+    "authors": [
+        {"id": 1, "name": "John"}
+    ]
+}
