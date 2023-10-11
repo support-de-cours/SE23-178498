@@ -60,12 +60,18 @@ const routes: Routes = [
   // Book create
   {
     path: 'book', // site.com/book
-    component: CreateComponent,
     children: [
       {
+        path: '',// site.com/book
+        component: CreateComponent,
+      },
+      {
         path: ':id', // site.com/book/42
-        component: ReadComponent,
         children: [
+          {
+            path: '', // site.com/book/42
+            component: ReadComponent,
+          },
           {
             path: 'edit', // site.com/book/42/edit
             component: UpdateComponent

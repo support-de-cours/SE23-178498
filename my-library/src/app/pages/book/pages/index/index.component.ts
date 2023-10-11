@@ -6,6 +6,7 @@ import { Book } from './../../interfaces/book';
   templateUrl: './index.component.html'
 })
 export class IndexComponent {
+
   public books: Book[] = [
     {
       title: "My awesome book",
@@ -26,11 +27,5 @@ export class IndexComponent {
       id: 456,
     },
   ];
+  
 }
-
-
-
-
-// "My awesome book",
-// "A super book",
-// "The book of doom"
